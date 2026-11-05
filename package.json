@@ -1,0 +1,20 @@
+{
+  "name": "yakiudon-register",
+  "version": "1.0.0",
+  "private": true,
+  "description": "焼うどん（400円）の販売・返品をボタン一つで記録する売上レジ。Cloudflare Workers + D1。",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.40.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DB": {
+        "description": "売上の記録を保存するデータベース（自動で作成されます）"
+      }
+    }
+  }
+}
